@@ -60,7 +60,7 @@ if candidates is not None and not candidates.empty:
     ).add_to(m)
 
     # 1. Read the image directly into Python memory to bypass browser security
-    img_data = plt.imread(r"C:/PhD_Research/Landfill_Project/data/outputs/flow_network.png")
+    file_path = "putnam_suitability.geojson"
 
     # 2. Add the DEM Flow Network Overlay using the memory data
     folium.raster_layers.ImageOverlay(
